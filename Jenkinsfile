@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     // Build backend and frontend images
-                    sh "docker build -t ${BACKEND_IMAGE}:${BUILD_NUMBER} ./backend"
+                    sh "docker build -t ${BACKEND_IMAGE}:${BUILD_NUMBER} ./Backend"
                     sh "docker build -t ${FRONTEND_IMAGE}:${BUILD_NUMBER} ./frontend"
                 }
             }
