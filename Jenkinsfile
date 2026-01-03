@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_USER = 'your_dockerhub_username'
-        BACKEND_IMAGE   = "your_dockerhub_username/inotebook-backend"
-        FRONTEND_IMAGE  = "your_dockerhub_username/inotebook-frontend"
-        REGISTRY_CRED   = 'docker-hub-credentials'
+        DOCKER_HUB_USER = 'govind9825'
+        BACKEND_IMAGE   = "govind9825/inotebook-backend"
+        FRONTEND_IMAGE  = "govind9825/inotebook-frontend"
+        REGISTRY_CRED   = 'docker-hub-credentials' 
     }
 
     stages {
