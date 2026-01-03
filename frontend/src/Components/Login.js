@@ -13,7 +13,7 @@ function Login(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = "http://localhost:5000/api/auth/login";
+    const url = "http://98.70.24.63:5000/api/auth/login";
 
     try {
       const response = await fetch(url, {
@@ -43,7 +43,7 @@ function Login(props) {
   };
 
   const fetchUserDetails = async (token) => {
-    const userDetailsUrl = "http://localhost:5000/api/auth/userDetails";
+    const userDetailsUrl = "http://98.70.24.63:5000/api/auth/userDetails";
     try {
       const response = await fetch(userDetailsUrl, {
         method : "POST",
